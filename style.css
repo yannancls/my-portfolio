@@ -1,5 +1,9 @@
 /* GENERAL */
 
+html {
+    cursor: url('cursor/arrow.png'), auto;
+}
+
 body {
     padding: 0px;
     margin: 0px;
@@ -30,6 +34,7 @@ a {
     margin-right: -5px;
     letter-spacing: 6px;
     font-size: 13px;
+    cursor: url('cursor/hand.png'), auto;
 }
 
 .active {
@@ -56,6 +61,7 @@ a {
     color: #46406b;
     border: #46406b solid 2px;
     padding: 8px 18px;
+    cursor: url('cursor/hand.png'), auto;;
 }
 
 /* HOME */
@@ -74,12 +80,14 @@ a {
 
 .name {
     color: #46406b;
+    cursor:url('cursor/arrow.png'), auto;
 }
 
 .roles {
     text-align: center;
     font-weight: 350;
     font-size: 17px;
+    cursor: url('cursor/arrow.png'), auto;
 }
 
 /* ABOUT */
@@ -195,4 +203,35 @@ a {
 
 .contacts-icon:hover {
     width: 70px;
+}
+
+/* OTHER */
+
+.name {
+    font-weight: 360;
+    animation-name: effect3d;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes effect3d {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    };
+}
+
+.box:hover {
+    animation-name: pullRelease;
+   animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+@keyframes pullRelease {
+    15% { transform: scale(1.2) }
 }
