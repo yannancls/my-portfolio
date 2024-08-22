@@ -188,7 +188,8 @@ a {
     flex-direction: row;
     background-color: #d9d9d9;
     align-items: center;
-    margin: 10px;
+    margin: 5px 10px;
+    padding: 0px 5px;
     width: 70%;
 }
 
@@ -197,12 +198,12 @@ a {
 }
 
 .contacts-icon {
-    width: 60px;
+    width: 50px;
     padding: 5px;
 }
 
 .contacts-icon:hover {
-    width: 70px;
+    width: 60px;
 }
 
 /* OTHER */
