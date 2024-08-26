@@ -32,7 +32,7 @@ a {
     color: black;
     padding: 16px 30px;
     margin-right: -5px;
-    letter-spacing: 6px;
+    letter-spacing: 5px;
     font-size: 13px;
     cursor: url('cursor/hand.png'), auto;
 }
@@ -62,6 +62,22 @@ a {
     border: #46406b solid 2px;
     padding: 8px 18px;
     cursor: url('cursor/hand.png'), auto;;
+}
+
+
+@media screen and (max-width: 788px) {
+    .nav-bar a {
+        font-size: 10px;
+        padding: 16px 20px;
+        margin-right: -5px;
+    }
+    .nav-bar {
+        margin-top: -7px;
+    }
+    .dl-resume {
+        margin-top: 25px;
+        font-size: 10px;
+    }
 }
 
 /* HOME */
@@ -124,7 +140,7 @@ a {
 }
 
 .right-section li {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .skills-txt {
@@ -190,11 +206,14 @@ a {
     align-items: center;
     margin: 5px 10px;
     padding: 0px 5px;
-    width: 70%;
+    width: 60%;
+    min-width: 400px;
+    max-width: 500px;
 }
 
 .container a:hover {
     color: #46406b;
+    font-weight: 500;
 }
 
 .contacts-icon {
@@ -204,6 +223,72 @@ a {
 
 .contacts-icon:hover {
     width: 60px;
+    padding: 0px;
+}
+
+/* MINI PROJECTS */
+
+.mini-projects-txt {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #46406b;
+    margin-top: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+    gap: 18px;
+}
+
+.projects-box {
+    width: 30%;
+    /* margin: 5px; */
+    padding: 15px 5px;
+    display: flex;
+    text-align: center;  
+}
+
+.projects-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    position: relative;
+    padding: 1rem 2rem 0.5rem 2.5rem;
+    color: #e2e7fb;
+    border: 3px solid #6f707a;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+}
+
+.projects-box a:before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #8585bb;
+    border-right: 3px solid #6d6890;
+    border-bottom: 3px solid #6d6890;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects-box a:hover {
+    padding: 0.75rem 2.25rem;
+}
+
+.projects-box a:hover:before {
+    top: 0;
+    left: 0;
 }
 
 /* OTHER */
@@ -224,15 +309,4 @@ a {
     to {
         text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
     };
-}
-
-.box:hover {
-    animation-name: pullRelease;
-   animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-direction: alternate;
-}
-@keyframes pullRelease {
-    15% { transform: scale(1.2) }
 }
