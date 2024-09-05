@@ -34,7 +34,7 @@ p {
     margin-top: -3px;
 }
 
-a {
+a:not(.resume-file) {
     text-decoration: none;
     color: black;
     padding: 16px 30px;
@@ -63,18 +63,25 @@ a {
     transition: background-color 0.3s, color 0.3s;
 }
 
+.resume-file {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    padding: 16px 30px;
+    font-size: 13px;
+    cursor: url('cursor/hand.png'), auto;
+}
+
 .dl-resume:hover {
     background: #d9d9d9;
-    color: #46406b;
     border: #46406b solid 2px;
     padding: 8px 18px;
     cursor: url('cursor/hand.png'), auto;;
 }
 
-.resume-file {
-    padding: 0;
-    margin: 0;
-    display: none;
+.resume-file:hover {
+    color: #46406b;
 }
 
 
