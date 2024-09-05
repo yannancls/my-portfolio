@@ -34,7 +34,7 @@ p {
     margin-top: -3px;
 }
 
-a:not(.resume-file) {
+a {
     text-decoration: none;
     color: black;
     padding: 16px 30px;
@@ -64,13 +64,8 @@ a:not(.resume-file) {
 }
 
 .resume-file {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+    letter-spacing: 0;
     color: white;
-    padding: 16px 30px;
-    font-size: 13px;
-    cursor: url('cursor/hand.png'), auto;
 }
 
 .dl-resume:hover {
