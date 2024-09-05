@@ -171,12 +171,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 22px;
 }
 
 .box {
     flex: 1;
     border-radius: 20px;
     transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
 }
 
 .box:hover {
