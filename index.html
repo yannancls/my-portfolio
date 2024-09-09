@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>My Portfolio | Home</title>
     </head>
@@ -9,10 +11,17 @@
         <div class="nav-bar">
             
             <div>
-                <a href="index.html" class="active">Home</a>
-                <a href="about.html" class="inactive">About</a>
-                <a href="contacts.html" class="inactive">Contacts</a>
-                <a href="mini-projects.html" class="inactive">Mini Projects</a>
+                <button class="menu-icon hamburger-button">
+                    <img src="icons/menu.png" class="hamburger-icon">
+                </button>
+                <button class="menu-icon x-button">
+                    <img src="icons/x.png" class="x-icon">
+                </button>
+                
+                <a href="index.html" class="active nav-links">Home</a>
+                <a href="about.html" class="inactive nav-links">About</a>
+                <a href="contacts.html" class="inactive nav-links">Contacts</a>
+                <a href="mini-projects.html" class="inactive nav-links">Mini Projects</a>
             </div>
             <button class="dl-resume"><a href="resume/Resume.pdf" download class="resume-file">Download Resume</a>
             </button>
