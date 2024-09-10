@@ -9,29 +9,46 @@
     </head>
     <body>
 
-        <div class="nav-bar">
-
+        <nav class="nav-bar">
+            
             <div>
-                <a href="index.html" class="inactive">Home</a>
-                <a href="about.html" class="inactive">About</a>
-                <a href="contacts.html" class="inactive">Contacts</a>
-                <a href="mini-projects.html" class="active">Mini Projects</a>
+                <button class="menu-icon hamburger-button">
+                    <img src="icons/menu.png" class="hamburger-icon" onclick="showMenu()">
+                </button>
+                <button class="menu-icon x-button">
+                    <img src="icons/x.png" class="x-icon" onclick="hideMenu()">
+                </button>
+                
+                <a href="index.html" class="inactive nav-links">Home</a>
+                <a href="about.html" class="inactive nav-links">About</a>
+                <a href="contacts.html" class="inactive nav-links">Contacts</a>
+                <a href="mini-projects.html" class="active nav-links">Mini Projects</a>
             </div>
             <button class="dl-resume"><a href="resume/Resume.pdf" download class="resume-file">Download Resume</a>
             </button>
             
+        </nav>
+        <div class="drpdwn-div">
+            <div class="dropdown-container">
+                <a href="index.html" class="inactive nav-dropdown">Home</a>
+                <a href="about.html" class="inactive nav-dropdown">About</a>
+                <a href="contacts.html" class="inactive nav-dropdown">Contacts</a>
+                <a href="mini-projects.html" class="active nav-dropdown">Mini Projects</a>
+            </div>
         </div>
 
-        <p class="mini-projects-txt">MINI PROJECTS</p>
+        <h3 class="mini-projects-txt">MINI PROJECTS</h3>
         
-        <div class="projects-container">
+        <section class="projects-container">
             <div class="projects-box">
                 <a href="https://yannancls.github.io/rock-paper-scissors/" target="_blank">Rock Paper Scissors</a>
             </div>
             <div class="projects-box">
                 <a href="https://yannancls.github.io/etch-a-sketch/" target="_blank">Etch-a-Sketch</a>
             </div>
-        </div>
+        </section>
+
+        <script src="javascript.js"></script>
 
     </body>
 </html>

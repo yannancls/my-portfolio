@@ -9,26 +9,41 @@
     </head>
     <body>
 
-        <div class="nav-bar">
-
+        <nav class="nav-bar">
+            
             <div>
-                <a href="index.html" class="inactive">Home</a>
-                <a href="about.html" class="active">About</a>
-                <a href="contacts.html" class="inactive">Contacts</a>
-                <a href="mini-projects.html" class="inactive">Mini Projects</a>
+                <button class="menu-icon hamburger-button">
+                    <img src="icons/menu.png" class="hamburger-icon" onclick="showMenu()">
+                </button>
+                <button class="menu-icon x-button">
+                    <img src="icons/x.png" class="x-icon" onclick="hideMenu()">
+                </button>
+                
+                <a href="index.html" class="inactive nav-links">Home</a>
+                <a href="about.html" class="active nav-links">About</a>
+                <a href="contacts.html" class="inactive nav-links">Contacts</a>
+                <a href="mini-projects.html" class="inactive nav-links">Mini Projects</a>
             </div>
             <button class="dl-resume"><a href="resume/Resume.pdf" download class="resume-file">Download Resume</a>
             </button>
             
+        </nav>
+        <div class="drpdwn-div">
+            <div class="dropdown-container">
+                <a href="index.html" class="inactive nav-dropdown">Home</a>
+                <a href="about.html" class="active nav-dropdown">About</a>
+                <a href="contacts.html" class="inactive nav-dropdown">Contacts</a>
+                <a href="mini-projects.html" class="inactive nav-dropdown">Mini Projects</a>
+            </div>
         </div>
 
-        <div class="about-contents">
+        <section class="about-contents">
             <div class="left-section">
                 <img src="images/picture.JPG" class="picture">
             </div>
 
-            <div class="right-section">
-                <p class="about-txt">ABOUT</p>
+            <section class="right-section">
+                <h2 class="about-txt">ABOUT</h2>
                 <ul class>
                     <li>Lived in Tagaytay City</li>
                     <li>Fresh graduate from Cavite State University</li>
@@ -37,55 +52,57 @@
                     <li>Internship: Pixel8 (System Analyst)</li>
                 </ul>
 
-                <p class="skills-txt">SKILLS</p>
+                <h3 class="skills-txt">SKILLS</h3>
 
                 <div class="skills">
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/html.png" class="icons">
                         </div>
                         <p class="skill-name">HTML</p>
-                    </div>
+                    </article>
 
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/css.png" class="icons">
                         </div>
                         <p class="skill-name">CSS</p>
-                    </div>
+                    </article>
 
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/js.png" class="icons">
                         </div>
                         <p class="skill-name">JavaScript</p>
-                    </div>
+                    </article>
 
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/py.png" class="icons">
                         </div>
                         <p class="skill-name">Python</p>
-                    </div>
+                    </article>
 
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/java.png" class="icons">
                         </div>
                         <p class="skill-name">Java</p>
-                    </div>
+                    </article>
 
-                    <div class="box">
+                    <article class="box">
                         <div class="icon-container">
                             <img src="icons/mysql.png" class="icons">
                         </div>
                         <p class="skill-name">MySQL</p>
-                    </div>
+                    </article>
 
                 </div>
 
-            </div>
-        </div>
+            </section>
+        </section>
+
+        <script src="javascript.js"></script>
         
     </body>
 </html>

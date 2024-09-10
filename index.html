@@ -8,14 +8,14 @@
     </head>
     <body>
 
-        <div class="nav-bar">
+        <nav class="nav-bar">
             
             <div>
                 <button class="menu-icon hamburger-button">
-                    <img src="icons/menu.png" class="hamburger-icon">
+                    <img src="icons/menu.png" class="hamburger-icon" onclick="showMenu()">
                 </button>
                 <button class="menu-icon x-button">
-                    <img src="icons/x.png" class="x-icon">
+                    <img src="icons/x.png" class="x-icon" onclick="hideMenu()">
                 </button>
                 
                 <a href="index.html" class="active nav-links">Home</a>
@@ -26,15 +26,26 @@
             <button class="dl-resume"><a href="resume/Resume.pdf" download class="resume-file">Download Resume</a>
             </button>
             
-        </div>
-        
-        <div class="content">
-            <div>
-                <p class="introduction">Hi,</p>
-                <p class="introduction">I'm <span class="name">Alyanna Nicolas</span></p>
-                <p class="roles">Software Developer &#x2022; UI/UX Designer &#x2022; Frontend Developer</p>
+        </nav>
+
+        <div class="drpdwn-div">
+            <div class="dropdown-container">
+                <a href="index.html" class="active nav-dropdown">Home</a>
+                <a href="about.html" class="inactive nav-dropdown">About</a>
+                <a href="contacts.html" class="inactive nav-dropdown">Contacts</a>
+                <a href="mini-projects.html" class="inactive nav-dropdown">Mini Projects</a>
             </div>
         </div>
 
+        
+        <section class="content">
+            <div>
+                <h1 class="introduction">Hi,</h1>
+                <h1 class="introduction">I'm <span class="name">Alyanna Nicolas</span></h1>
+                <h3 class="roles">Software Developer &#x2022; Frontend Developer</h3>
+            </div>
+        </section>
+
+        <script src="javascript.js"></script>
     </body>
 </html>
