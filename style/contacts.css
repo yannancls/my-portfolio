@@ -1,0 +1,42 @@
+.contacts-txt {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #46406b;
+    margin-top: 30px;
+}
+
+.contacts-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 0px 5px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.container a:hover {
+    color: #46406b;
+    font-weight: 500;
+}
+
+.contacts-icon {
+    width: 50px;
+    padding: 5px;
+}
+
+.contacts-icon:hover {
+    width: 60px;
+    padding: 0px;
+}

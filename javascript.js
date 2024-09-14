@@ -29,7 +29,7 @@ function showMenu() {
             hamburgerbutton.style.display = 'none';
             xbutton.style.display = 'inline';
             dropdown.style.display = 'inline';
-        }, 300);
+        }, 200);
     }
 }
 
@@ -42,7 +42,7 @@ function hideMenu() {
             hamburgerbutton.style.opacity = '1';
             xbutton.style.display = 'none';
             dropdown.style.display = 'none';
-        }, 300);
+        }, 200);
     }
 }
 

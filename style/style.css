@@ -1,0 +1,447 @@
+/* Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/* Jost */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* GENERAL */
+
+html {
+    cursor: url('cursor/arrow.png'), auto;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background-color: #c9c9c9;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+p, h1, h3 {
+    margin: 0;
+}
+
+/* NAV BAR */
+
+.menu-icon {
+    display: none;
+    margin-left: 20px;
+    margin-top: 5px;
+    border: none;
+    background-color: transparent;
+    cursor: url('cursor/hand.png'), auto;
+}
+
+.hamburger-icon, .x-icon {
+    padding: 0px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d9d9d9;
+    height: 50px;
+    margin-top: -3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 16px 30px;
+    margin-right: -5px;
+    letter-spacing: 5px;
+    font-size: 13px;
+    cursor: url('cursor/hand.png'), auto;
+}
+
+.active {
+    background-color: #46406b;
+    color: white;
+}
+
+.inactive {
+    position: relative;
+}
+.inactive:hover {
+    color: #6b62a4;
+}
+.inactive:after {    
+background: none repeat scroll 0 0 transparent;
+bottom: 0;
+content: "";
+display: block;
+height: 2px;
+left: 50%;
+position: absolute;
+background: #6b62a4;
+transition: width 0.3s ease 0s, left 0.3s ease 0s;
+width: 0;
+}
+.inactive:hover:after { 
+width: 100%; 
+left: 0; 
+}
+
+.dl-resume {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #46406b;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.resume-file {
+    letter-spacing: 0;
+    color: white;
+}
+
+.dl-resume:hover {
+    background: #d9d9d9;
+    border: #46406b solid 2px;
+    padding: 8px 18px;
+    cursor: url('cursor/hand.png'), auto;
+}
+
+.resume-file:hover {
+    color: #46406b;
+}
+
+.drpdwn-div {
+    display: none;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color:#aaa;
+    z-index: 100;
+}
+
+.dropdown-container a:hover {
+    color: white;
+}
+
+/* HOME */
+
+.content {
+    font-family: "Jost", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    margin: auto 30px;
+}
+
+.introduction {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.name {
+    color: #46406b;
+    cursor:url('cursor/arrow.png'), auto;
+}
+
+.roles {
+    text-align: center;
+    font-weight: 350;
+    font-size: 17px;
+    cursor: url('cursor/arrow.png'), auto;
+}
+
+/* ABOUT */
+
+.about-contents {
+    display: flex;
+}
+
+.picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.left-section {
+    width: 40%;
+    height: 90vh;
+}
+
+.right-section {
+    width: 60%;
+    margin-top: 24px;
+}
+
+.about-txt {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #46406b;
+}
+
+.right-section li {
+    padding-bottom: 15px;
+}
+
+.skills-txt {
+    text-align: center;
+    font-size: 25px;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    color: #46406b;
+}
+
+.skills {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 22px;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+    text-align: center;
+}
+
+.box:hover {
+    background-color: #46406b;
+    color: white;
+}
+
+.icons {
+    margin-top: 18px;
+    width: 70px;
+    height: auto;
+}
+
+.skill-name {
+    font-size: 15px;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+}
+
+/* CONTACTS */
+
+.contacts-txt {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #46406b;
+    margin-top: 30px;
+}
+
+.contacts-boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: #d9d9d9;
+    align-items: center;
+    margin: 5px 10px;
+    padding: 0px 5px;
+    width: 60%;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.container a:hover {
+    color: #46406b;
+    font-weight: 500;
+}
+
+.contacts-icon {
+    width: 50px;
+    padding: 5px;
+}
+
+.contacts-icon:hover {
+    width: 60px;
+    padding: 0px;
+}
+
+/* MINI PROJECTS */
+
+.mini-projects-txt {
+    text-align: center;
+    font-size: 38px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    color: #46406b;
+    margin-top: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+    gap: 18px;
+}
+
+.projects-box {
+    width: 30%;
+    padding: 15px 5px;
+    display: flex;
+    text-align: center;  
+}
+
+.projects-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 16px;
+    position: relative;
+    padding: 1rem 2rem 0.5rem 2.5rem;
+    color: #e2e7fb;
+    border: 3px solid #6f707a;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+}
+
+.projects-box a:before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #8585bb;
+    border-right: 3px solid #6d6890;
+    border-bottom: 3px solid #6d6890;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.projects-box a:hover {
+    padding: 0.75rem 2.25rem;
+}
+
+.projects-box a:hover:before {
+    top: 0;
+    left: 0;
+}
+
+/* OTHER */
+
+.name {
+    font-weight: 360;
+    animation-name: effect3d;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes effect3d {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15)
+    };
+}
+
+@media screen and (max-width: 850px) {
+    .nav-bar a {
+        font-size: 10px;
+        padding: 16px 20px;
+        margin-right: -5px;
+    }
+    .nav-bar {
+        margin-top: -7px;
+    }
+    .dl-resume {
+        margin-top: 25px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger-button {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger-button {
+        display: inline;
+    }
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projects-box {
+        width: auto;
+        margin: auto 30px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger-button {
+        display: inline;
+    }
+    .introduction {
+        font-size: 30px;
+    }
+    .roles {
+        font-size: 12px;
+    }
+    
+    .about-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-section {
+        margin-top: 18px;
+        width: auto;
+        height: auto;
+    }
+    .right-section {
+        width: 80%;
+        margin-top: 18px;
+    }
+    .picture {
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+    }
+}
