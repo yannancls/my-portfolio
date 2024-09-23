@@ -4,7 +4,6 @@
     margin-top: 5px;
     border: none;
     background-color: transparent;
-    cursor: url('cursor/hand.png'), auto;
 }
 
 .hamburger-icon, .x-icon {
@@ -24,16 +23,6 @@
     margin-top: -3px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-    padding: 16px 30px;
-    margin-right: -5px;
-    letter-spacing: 5px;
-    font-size: 13px;
-    cursor: url('cursor/hand.png'), auto;
-}
-
 .active {
     background-color: #46406b;
     color: white;
@@ -42,9 +31,11 @@ a {
 .inactive {
     position: relative;
 }
+
 .inactive:hover {
     color: #6b62a4;
 }
+
 .inactive:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -57,6 +48,7 @@ a {
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
+
 .inactive:hover:after { 
     width: 100%; 
     left: 0; 
@@ -81,7 +73,6 @@ a {
     background: #d9d9d9;
     border: #46406b solid 2px;
     padding: 8px 18px;
-    cursor: url('cursor/hand.png'), auto;
 }
 
 .resume-file:hover {

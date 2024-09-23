@@ -74,3 +74,9 @@
         height: 150px;
     }
 }
+
+@media (max-width: 450px) {
+    .projects-box a {
+        width: 130px;
+    }
+}

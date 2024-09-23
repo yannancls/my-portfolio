@@ -10,23 +10,25 @@
 .projects-container {
     display: flex;
     flex-direction: row;
-    margin: 5px;
     justify-content: center;
-    gap: 18px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: auto 50px;
+    line-height: 170%;
 }
 
 .projects-box {
-    width: 30%;
     padding: 15px 5px;
     display: flex;
-    text-align: center;  
+    text-align: center;
 }
 
 .projects-box a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    width: 200px;
+    min-height: 60px;
     font-size: 16px;
     position: relative;
     padding: 1rem 2rem 0.5rem 2.5rem;
@@ -58,4 +60,26 @@
 .projects-box a:hover:before {
     top: 0;
     left: 0;
+}
+
+.other-projects {
+    text-align: center;
+    color: #46406b;
+    font-size: 20px;
+    font-family: "Jost";
+    font-weight: 450;
+    margin: 10px 0px;
+}
+
+.other-projects a {
+    text-decoration: underline;
+    padding: 0;
+    margin-right: 0;
+    letter-spacing: 0px;
+    font-size: 20px;
+    color: #46406b;
+}
+
+.other-projects a:hover {
+    color: #6d6890;
 }

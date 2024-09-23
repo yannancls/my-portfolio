@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-    cursor: url('cursor/arrow.png'), auto;
+    cursor: url('../cursor/arrow.png'), auto;
 }
 
 body {
@@ -14,8 +14,31 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     box-sizing: border-box;
+    max-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 16px 30px;
+    margin-right: -5px;
+    letter-spacing: 5px;
+    font-size: 13px;
 }
 
 p, h1, h3 {
     margin: 0;
+}
+
+a,
+.menu-icon,
+.dl-resume:hover {
+    cursor: url('../cursor/hand.png'), auto;
+}
+
+hr {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(110, 105, 143, 0.75), rgba(255, 255, 255, 0));
+    height: 1px;
+    margin: 20px;
+    border: none;
 }
