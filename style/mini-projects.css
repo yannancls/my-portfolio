@@ -55,11 +55,31 @@
 
 .projects-box a:hover {
     padding: 0.75rem 2.25rem;
+    color: transparent;
 }
 
 .projects-box a:hover:before {
     top: 0;
     left: 0;
+}
+
+.projects-box a:hover::after {
+    color: #e2e7fb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-1 .projects-box:nth-child(1) a:hover::after,
+.container-1 .projects-box:nth-child(2) a:hover::after {
+    content: 'HTML, CSS & JavaScript';
+}
+
+.container-2 .projects-box:nth-child(1) a:hover::after,
+.container-2 .projects-box:nth-child(2) a:hover::after,
+.container-2 .projects-box:nth-child(3) a:hover::after {
+    content: 'HTML & CSS';
 }
 
 .other-projects {
@@ -82,4 +102,5 @@
 
 .other-projects a:hover {
     color: #6d6890;
+    
 }
